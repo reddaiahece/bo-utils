@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" loadImage="GetImage"  xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <ribbon>
+    <tabs>
+      <tab id="tabBoUtils" label="BO-Utils" getVisible="GetTabVisible">
+        <group id="grpSession" label="Session">
+          <button id="btLogin_Click" getImage="GetLoginImage" onAction="OnClick" getLabel="GetLoginLabel" screentip="Import data from multiple workbooks" size="large" />
+        </group>
+        <group id="grpScheduler" label="Scheduler">
+          <button id="btGetList_Click" label="Get List" image="getlist" onAction="OnClick" getEnabled="GetEnabled" screentip="_" showImage="true" />
+          <button id="btSchedule_Click" label="Schedule" image="schedule" onAction="OnClick" getEnabled="GetEnabled" screentip="_" showImage="true" />
+          <button id="btRefresh_Click" label="Refresh" image="refresh" onAction="OnClick" getEnabled="GetEnabled" screentip="_" showImage="true" />
+          <button id="btDownload_Click" label="Download" image="download" onAction="OnClick" getEnabled="GetEnabled" screentip="_" showImage="true" />
+          <button id="btClean_Click" label="Clean" image="clean" onAction="OnClick" getEnabled="GetEnabled" screentip="_" showImage="true" />
+        </group>
+        <group id="grpInfo" label="Help">
+          <button id="btHelp_Click" onAction="OnClick" label="Help" showImage="true" image="help" />
+          <button id="btAbout_Click" onAction="OnClick" label="About" showImage="true" image="info" />
+          <button id="btUninstall_Click" onAction="OnClick" label="Uninstall" showImage="true" image="uninstall"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>

@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.31029</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10774728-1EB6-46A8-B30A-A6E2CAE7F7B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>bo-utils-lib</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <IncrementalBuild>false</IncrementalBuild>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <IncrementalBuild>false</IncrementalBuild>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>BusinessObjectsUtils</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BusinessObjectsUtils.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BusinessObjects.DSWS115, Version=11.5.4100.0, Culture=neutral, PublicKeyToken=90115eea36a1dc1c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS115\BusinessObjects.DSWS115.dll</HintPath>
+      <Aliases>DSWS115</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS115.BIPlatform, Version=11.5.4100.0, Culture=neutral, PublicKeyToken=90115eea36a1dc1c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS115\BusinessObjects.DSWS115.BIPlatform.dll</HintPath>
+      <Aliases>DSWS115</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS115.QueryService, Version=11.5.4100.0, Culture=neutral, PublicKeyToken=90115eea36a1dc1c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS115\BusinessObjects.DSWS115.QueryService.dll</HintPath>
+      <Aliases>DSWS115</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS115.ReportEngine, Version=11.5.4100.0, Culture=neutral, PublicKeyToken=90115eea36a1dc1c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS115\BusinessObjects.DSWS115.ReportEngine.dll</HintPath>
+      <Aliases>DSWS115</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS115.Session, Version=11.5.4100.0, Culture=neutral, PublicKeyToken=90115eea36a1dc1c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS115\BusinessObjects.DSWS115.Session.dll</HintPath>
+      <Aliases>DSWS115</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS120, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=6d01e82b43982aa1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS120\BusinessObjects.DSWS120.dll</HintPath>
+      <Aliases>DSWS120</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS120.BIPlatform, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=6d01e82b43982aa1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS120\BusinessObjects.DSWS120.BIPlatform.dll</HintPath>
+      <Aliases>DSWS120</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS120.QueryService, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=6d01e82b43982aa1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS120\BusinessObjects.DSWS120.QueryService.dll</HintPath>
+      <Aliases>DSWS120</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS120.ReportEngine, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=6d01e82b43982aa1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS120\BusinessObjects.DSWS120.ReportEngine.dll</HintPath>
+      <Aliases>DSWS120</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS120.Session, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=6d01e82b43982aa1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS120\BusinessObjects.DSWS120.Session.dll</HintPath>
+      <Aliases>DSWS120</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS140, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=84d05bf5a775ee82, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS140\BusinessObjects.DSWS140.dll</HintPath>
+      <Aliases>DSWS140</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS140.BIPlatform, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=84d05bf5a775ee82, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS140\BusinessObjects.DSWS140.BIPlatform.dll</HintPath>
+      <Aliases>DSWS140</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS140.QueryService, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=84d05bf5a775ee82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS140\BusinessObjects.DSWS140.QueryService.dll</HintPath>
+      <Aliases>DSWS140</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS140.ReportEngine, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=84d05bf5a775ee82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS140\BusinessObjects.DSWS140.ReportEngine.dll</HintPath>
+      <Aliases>DSWS140</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS140.Session, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=84d05bf5a775ee82, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS140\BusinessObjects.DSWS140.Session.dll</HintPath>
+      <Aliases>DSWS140</Aliases>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>System.dll</HintPath>
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <HintPath>System.XML.dll</HintPath>
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bo_scheduler\dsws\SchedulerRand.cs" />
+    <Compile Include="bo_scheduler\dsws\SchedulerTest.cs" />
+    <Compile Include="bo_session\dsws\SessionRand.cs" />
+    <Compile Include="ComboBoxCust.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bo_scheduler\SchedulerManager.cs" />
+    <Compile Include="bo_session\Structures.cs" />
+    <Compile Include="bo_session\dsws\SessionTest.cs" />
+    <Compile Include="bo_session\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bo_session\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bo_scheduler\dsws\IScheduler.cs" />
+    <Compile Include="bo_session\dsws\ISession.cs" />
+    <Compile Include="bo_session\SessionManager.cs" />
+    <Compile Include="FrmException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmException.designer.cs">
+      <DependentUpon>FrmException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFolders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFolders.Designer.cs">
+      <DependentUpon>FrmFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helper\PairValue.cs" />
+    <Compile Include="helper\Rand.cs" />
+    <Compile Include="helper\Waiter.cs" />
+    <Compile Include="InputError.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bo_session\dsws\Session115.cs" />
+    <Compile Include="bo_session\dsws\Session120.cs" />
+    <Compile Include="bo_session\dsws\Session140.cs" />
+    <Compile Include="MsgBox.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="bo_scheduler\FrmDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bo_scheduler\FrmDelete.Designer.cs">
+      <DependentUpon>FrmDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bo_scheduler\FrmDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bo_scheduler\FrmDownload.Designer.cs">
+      <DependentUpon>FrmDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bo_scheduler\FrmGetList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bo_scheduler\FrmGetList.Designer.cs">
+      <DependentUpon>FrmGetList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bo_scheduler\FrmGetStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bo_scheduler\FrmGetStatus.Designer.cs">
+      <DependentUpon>FrmGetStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bo_scheduler\FrmSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bo_scheduler\FrmSchedule.Designer.cs">
+      <DependentUpon>FrmSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRunner.Designer.cs">
+      <DependentUpon>FrmRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bo_scheduler\dsws\Scheduler115.cs" />
+    <Compile Include="bo_scheduler\dsws\Scheduler140.cs" />
+    <Compile Include="bo_session\Watcher.cs" />
+    <Compile Include="bo_scheduler\Structures.cs" />
+    <Compile Include="bo_univers\UniDocument.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="bo_scheduler\dsws\Scheduler120.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bo_session\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmException.resx">
+      <DependentUpon>FrmException.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFolders.resx">
+      <DependentUpon>FrmFolders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bo_scheduler\FrmDelete.resx">
+      <DependentUpon>FrmDelete.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bo_scheduler\FrmDownload.resx">
+      <DependentUpon>FrmDownload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bo_scheduler\FrmGetList.resx">
+      <DependentUpon>FrmGetList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bo_scheduler\FrmGetStatus.resx">
+      <DependentUpon>FrmGetStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bo_scheduler\FrmSchedule.resx">
+      <DependentUpon>FrmSchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRunner.resx">
+      <DependentUpon>FrmRunner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessObjectsUtils.snk" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions />
+</Project>

@@ -1,0 +1,1 @@
+bo-etl.exe "config.xml" "trace.log"

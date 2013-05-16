@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<database>
+		<path></path>
+		<user>SYSDBA</user>
+		<password>masterkey</password>
+		<multiload>false</multiload>
+	</database>
+	<webservice>
+		<sessionURL>http://hostname:port/dswsbobje/services</sessionURL>
+		<system></system>
+		<user></user>
+		<password></password>
+	</webservice>
+</config>
