@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE15D10A-A290-4E98-8F7F-FF3A25ABEB5B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessObjectsEtl</RootNamespace>
+    <AssemblyName>BusinessObjectsEtl</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BusinessObjects.DSWS115">
+      <HintPath>..\references\BusinessObjects\BusinessObjects.DSWS115\BusinessObjects.DSWS115.dll</HintPath>
+      <Aliases>DSWS115</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS115.BIPlatform">
+      <HintPath>..\references\BusinessObjects\BusinessObjects.DSWS115\BusinessObjects.DSWS115.BIPlatform.dll</HintPath>
+      <Aliases>DSWS115</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS115.Session">
+      <HintPath>..\references\BusinessObjects\BusinessObjects.DSWS115\BusinessObjects.DSWS115.Session.dll</HintPath>
+      <Aliases>DSWS115</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS120">
+      <HintPath>..\references\BusinessObjects\BusinessObjects.DSWS120\BusinessObjects.DSWS120.dll</HintPath>
+      <Aliases>DSWS120</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS120.BIPlatform">
+      <HintPath>..\references\BusinessObjects\BusinessObjects.DSWS120\BusinessObjects.DSWS120.BIPlatform.dll</HintPath>
+      <Aliases>DSWS120</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS120.Session">
+      <HintPath>..\references\BusinessObjects\BusinessObjects.DSWS120\BusinessObjects.DSWS120.Session.dll</HintPath>
+      <Aliases>DSWS120</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS140">
+      <HintPath>..\references\BusinessObjects\BusinessObjects.DSWS140\BusinessObjects.DSWS140.dll</HintPath>
+      <Aliases>DSWS140</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS140.BIPlatform">
+      <HintPath>..\references\BusinessObjects\BusinessObjects.DSWS140\BusinessObjects.DSWS140.BIPlatform.dll</HintPath>
+      <Aliases>DSWS140</Aliases>
+    </Reference>
+    <Reference Include="BusinessObjects.DSWS140.Session">
+      <HintPath>..\references\BusinessObjects\BusinessObjects.DSWS140\BusinessObjects.DSWS140.Session.dll</HintPath>
+      <Aliases>DSWS140</Aliases>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient">
+      <HintPath>..\References\Firebird\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\DataBase.cs" />
+    <Compile Include="Etl\Etl.cs" />
+    <Compile Include="Etl\Etl115.cs" />
+    <Compile Include="Etl\Etl120.cs" />
+    <Compile Include="Etl\Etl140.cs" />
+    <Compile Include="Database\Firebird.cs" />
+    <Compile Include="Database\Schema.cs" />
+    <Compile Include="Login\Session115.cs" />
+    <Compile Include="Login\Session120.cs" />
+    <Compile Include="Login\Session140.cs" />
+    <Compile Include="Login\SessionBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
