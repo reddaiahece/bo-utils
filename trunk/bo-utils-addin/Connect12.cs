@@ -41,12 +41,9 @@ namespace BOUtilsAddin
 
         public override void OnWorkbookActivate(Excel.Workbook Wb) {
             try{
+                if (Wb == null) return;
                 _tabVisible = false;
-                if (Wb == null)
-                    return;
-                if (Wb == null)
-                    _tabVisible = false;
-                else if (_commandList.ContainsKey(Wb)) {
+                if (_commandList.ContainsKey(Wb)) {
                     _commands = _commandList[Wb];
                     _tabVisible = true;
                 } else if (IsTemplateWb(Wb)) {

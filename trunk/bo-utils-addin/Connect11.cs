@@ -22,11 +22,10 @@ namespace BOUtilsAddin
         
         public override void OnWorkbookActivate(Excel.Workbook Wb) {
             try {
+                if (Wb == null) return;
                 if (_btTab != null)
                     _btTab.Visible = false;
-                if(Wb==null)
-                    _btTab.Visible = false;
-                else if (_commandList.ContainsKey(Wb)) {
+                if (_commandList.ContainsKey(Wb)) {
                     _commands = _commandList[Wb];
                     _btTab.Visible = true;
                 } else if (IsTemplateWb(Wb)) {

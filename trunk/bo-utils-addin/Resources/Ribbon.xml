@@ -14,7 +14,7 @@
           <button id="btClean_Click" label="Clean" image="clean" onAction="OnClick" getEnabled="GetEnabled" screentip="_" showImage="true" />
         </group>
         <group id="grpInfo" label="Help">
-          <button id="btHelp_Click" onAction="OnClick" label="Help" showImage="true" image="help" />
+          <button id="btHelp_Click" onAction="OnClick" label="Help" enabled="false" showImage="true" image="help" />
           <button id="btAbout_Click" onAction="OnClick" label="About" showImage="true" image="info" />
           <button id="btUninstall_Click" onAction="OnClick" label="Uninstall" showImage="true" image="uninstall"/>
         </group>
