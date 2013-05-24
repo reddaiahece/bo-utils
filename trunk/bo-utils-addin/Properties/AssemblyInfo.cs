@@ -19,7 +19,7 @@ using System.Resources;
 [assembly: AssemblyKeyFile("")]
 [assembly: AssemblyKeyName("")]
 [assembly: AssemblyVersion("0.0.0.0")]
-[assembly: AssemblyFileVersionAttribute("1.0.1.2")]
+[assembly: AssemblyFileVersionAttribute("1.0.1.3")]
 [assembly: ComVisibleAttribute(false)]
 [assembly: GuidAttribute("A27E3918-FA87-48BF-9E85-72B9C65877B1")]
 [assembly: NeutralResourcesLanguageAttribute("")]

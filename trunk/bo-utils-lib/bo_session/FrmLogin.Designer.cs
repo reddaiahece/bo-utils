@@ -262,9 +262,9 @@ namespace BusinessObjectsUtils.bo_session
             this.label6.ForeColor = System.Drawing.Color.Blue;
             this.label6.Location = new System.Drawing.Point(1, 168);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 13);
+            this.label6.Size = new System.Drawing.Size(81, 13);
             this.label6.TabIndex = 57;
-            this.label6.Text = "Proxy";
+            this.label6.Text = "Proxy (Optional)";
             // 
             // ctrlProxyPort
             // 
