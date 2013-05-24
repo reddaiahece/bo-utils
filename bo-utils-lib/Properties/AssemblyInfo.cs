@@ -15,8 +15,8 @@ using System.IO;
 [assembly: AssemblyCulture("")]
 [assembly: Guid("9D089266-3BC1-4175-B0FE-BA080F13925E")]
 [assembly: ComVisible(false)]
-[assembly: AssemblyVersion("1.0.1.2")]
-[assembly: AssemblyFileVersion("1.0.1.2")]
+[assembly: AssemblyVersion("1.0.1.3")]
+[assembly: AssemblyFileVersion("1.0.1.3")]
 
 namespace BusinessObjectsUtils
 {

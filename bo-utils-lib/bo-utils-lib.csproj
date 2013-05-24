@@ -125,6 +125,10 @@
       <HintPath>..\References\BusinessObjects\BusinessObjects.DSWS140\BusinessObjects.DSWS140.Session.dll</HintPath>
       <Aliases>DSWS140</Aliases>
     </Reference>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>System.dll</HintPath>
       <Name>System</Name>
